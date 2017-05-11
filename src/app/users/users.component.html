@@ -1,0 +1,8 @@
+<section>
+  <h1>User based NG Assignment</h1>
+  <input type="text" name="username" [(ngModel)]="userName" (onChange)="showUserNew()" />
+  <p >The user is {{userName}}.</p>
+  <button [disabled]="userName==''" (click)="userName=''" >Reset</button>
+  <p>{{ finalUserName }}</p>
+
+</section>
